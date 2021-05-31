@@ -14,17 +14,16 @@ class N2x5{
     [[1,1,1,0,1],[1,1,1,1,1]]] //9
   }
 }
-
 namespace TwoDigitNumbers{
     let n:N2x5
     export function show(value:number){
-        TwoDigitNumbers.getImage(value).showImage(0)
+        TwoDigitNumbers.getImage(value).plotFrame(0)
     }
     export function getImage(value:number):Image{
         let img=images.createImage('.....\r\n.....\r\n.....\r\n.....\r\n.....');
         let t=Math.floor(value/10)
         let f=value-t*10
-        copyDigit(0,t,img)
+        if(t>0)copyDigit(0,t,img)
         copyDigit(3,f,img)
         return img
     }
