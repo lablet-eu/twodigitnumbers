@@ -1,7 +1,8 @@
 namespace TwoDigitNumbers{
     let numbers=[
-        [[0,1,0,0,0],[1,1,1,1,1]],
-        [[1,0,1,1,1],[1,1,1,0,1]],
+        [[1,1,1,1,1],[1,1,1,1,1]], //0
+        [[0,1,0,0,0],[1,1,1,1,1]], //1
+        [[1,0,1,1,1],[1,1,1,0,1]], //2
         [[0,1,0,0,0],[1,1,1,1,1]],
         [[0,1,0,0,0],[1,1,1,1,1]],
         [[0,1,0,0,0],[1,1,1,1,1]],
@@ -14,7 +15,7 @@ namespace TwoDigitNumbers{
         TwoDigitNumbers.getImage(value)
     }
     export function getImage(value:number):Image{
-        let img:Image
+        let img=images.createImage('.....\r\n.....\r\n.....\r\n.....\r\n.....');
         let t=Math.floor(value/10)
         let f=value-t*10
         copyDigit(0,t,img)
