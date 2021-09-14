@@ -14,6 +14,7 @@ class N2x5{
     [[1,1,1,0,1],[1,1,1,1,1]]] //9
   }
 }
+//% color=#008060 weight=100 icon="\uf04c" block="TwoDigitNumbers";
 namespace TwoDigitNumbers{
     let n:N2x5
     //% blockId="TwoDigitNumbers_showXX $value"
