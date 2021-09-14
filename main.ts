@@ -14,13 +14,12 @@ class N2x5{
     [[1,1,1,0,1],[1,1,1,1,1]]] //9
   }
 }
-//% color=#008060 weight=100 icon="\uf0eb" block="TwoDigitNumbers"
 namespace TwoDigitNumbers{
     let n:N2x5
-    //% blockId="TwoDigitNumbers_show $value"
-    //% block="show $value"
+    //% blockId="TwoDigitNumbers_showXX $value"
+    //% block="showXX $value"
     //% value.min=0 value.max= 99
-    export function show(value:number){
+    export function showXX(value:number){
         if (value < 0) {
             basic.showLeds(`
             . . . . .
