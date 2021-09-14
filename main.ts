@@ -18,8 +18,8 @@ class N2x5{
 namespace TwoDigitNumbers{
     let n:N2x5
     //% blockId="TwoDigitNumbers_show $value"
-    //% value.min=0 value.max= 99
     //% block="show $value"
+    //% value.min=0 value.max= 99
     export function show(value:number){
         TwoDigitNumbers.getImage(value).plotFrame(0)
     }
