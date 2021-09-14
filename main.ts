@@ -14,8 +14,11 @@ class N2x5{
     [[1,1,1,0,1],[1,1,1,1,1]]] //9
   }
 }
+//% color=#008060 weight=100 icon="\uf0eb" block="TwoDigitNumbers"
 namespace TwoDigitNumbers{
     let n:N2x5
+    //% blockId="TwoDigitNumbers_show"
+    //% block="shows a $number from 0-99"
     export function show(value:number){
         TwoDigitNumbers.getImage(value).plotFrame(0)
     }
