@@ -21,6 +21,24 @@ namespace TwoDigitNumbers{
     //% block="show $value"
     //% value.min=0 value.max= 99
     export function show(value:number){
+        if (value < 0) {
+            basic.showLeds(`
+            . . . . .
+            . . . . .
+            # . . . #
+            . # . # .
+            . . # . .`)
+            return
+        }
+        if (value > 99) {
+            basic.showLeds(`
+            . . # . .
+            . # . # .
+            # . . . #
+            . . . . .
+            . . . . .`)
+            return
+        }
         TwoDigitNumbers.getImage(value).plotFrame(0)
     }
     export function getImage(value:number):Image{
